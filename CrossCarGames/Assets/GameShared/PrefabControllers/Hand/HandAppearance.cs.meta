@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 99073c0ef82d59947afa5ccb70911fb7
+timeCreated: 1501545613
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - handOpenMesh: {fileID: 4300000, guid: 25015154f3d6e444f8de8548357b7998, type: 3}
+  - handClosedMesh: {fileID: 4300000, guid: c050bdadfefe2ce449fa3ee302761165, type: 3}
+  - handPointingMesh: {fileID: 4300000, guid: c7caae3c37b23ec48937b0d77b851bf7, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

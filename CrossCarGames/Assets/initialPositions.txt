@@ -1,0 +1,12 @@
+5.5 0 Backward
+6.5 0 Backward
+7.5 0 Backward
+5 1 Backward
+6 1 Backward
+7 1 Backward
+0.5 3 Forward
+1.5 3 Forward
+2.5 3 Forward
+0 2 Forward
+1 2 Forward
+2 2 Forward

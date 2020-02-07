@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: a476a57214fca624fac8094178417127
+timeCreated: 1501545227
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - scoreTextPrefab: {fileID: 1350263206201678, guid: 199f659f274ecf341990145f4f7cf912,
+      type: 2}
+  - ballHumanPrefab: {fileID: 1116173929591020, guid: 0b637e3b93b98bb41a7b7d7afa21f910,
+      type: 2}
+  - potato: {instanceID: 0}
+  - myPlayer: {instanceID: 0}
+  - respawnSound: {fileID: 8300000, guid: b1821a6def46f2242a13a4a073210fb8, type: 3}
+  - catchSound: {fileID: 8300000, guid: 93b0e7610a4481943ab312c7f54c82cd, type: 3}
+  - throwSound: {fileID: 8300000, guid: dc408d90ece39a7499a0c5a16c638aa2, type: 3}
+  - notifySound: {fileID: 8300000, guid: bff8cdb4673c5434da5c8920da70fde1, type: 3}
+  - bonusSound: {fileID: 8300000, guid: 9f5324ba239590142a72099d47200708, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

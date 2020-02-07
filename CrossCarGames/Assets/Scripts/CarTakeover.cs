@@ -1,0 +1,52 @@
+﻿// Copyright (C) 2017-2019 Matthew Lakier
+// 
+// This file is part of CrossCarGames.
+// 
+// CrossCarGames is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+// 
+// CrossCarGames is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+// 
+// You should have received a copy of the GNU General Public License
+// along with CrossCarGames.  If not, see <https://www.gnu.org/licenses/>.
+
+using SpamalotExtensions;
+using UnityEngine;
+
+public class CarTakeover : MonoBehaviour {
+
+    public Human human;
+    public GameInitializer gameInitializer;
+    [Layer]
+    public int screenLayer;
+
+    private bool _wasCurrentTakeover = false;
+    public bool isCurrentTakeover = false;
+
+    void Update() {
+        // Instead of setter so we can handle if editor toggle
+
+        if (_wasCurrentTakeover != isCurrentTakeover) {
+            if (isCurrentTakeover) {
+                AudioListener.pause = true;
+                human.GetComponent<Scoreable>().ScoreFrozen = true;
+                gameInitializer.hmdEye.cullingMask &= ~((1 << screenLayer) | gameInitializer.renderInAR);
+                foreach (var cam in gameInitializer.hudCameras) {
+                    cam.cullingMask = 0;
+                }
+            } else {
+                AudioListener.pause = false;
+                human.GetComponent<Scoreable>().ScoreFrozen = false;
+                gameInitializer.ConfigCameras();
+            }
+        }
+
+        _wasCurrentTakeover = isCurrentTakeover;
+    }
+
+}

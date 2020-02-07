@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: cd88ff816aec80543a0bb1f8bbc04d37
+timeCreated: 1501546674
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - scoreTextPrefab: {fileID: 1350263206201678, guid: 199f659f274ecf341990145f4f7cf912,
+      type: 2}
+  - dbgico: {fileID: 1875554824895356, guid: d948e4920c141904eb97e91d970cf262, type: 2}
+  - myPlayer: {instanceID: 0}
+  - playerDB: {instanceID: 0}
+  - spIt: {fileID: 21300000, guid: f17b420d267642c42b1d75bb3116ba75, type: 3}
+  - spDuck: {fileID: 21300000, guid: 8258d73780908e84a8b26eaf5c086ba1, type: 3}
+  - spDuckw: {fileID: 21300000, guid: 170865bea0d45884b8487ea66a172044, type: 3}
+  - spPt: {fileID: 21300000, guid: fd58dd0ede7d2254b8176522c9bfaee7, type: 3}
+  - spSl: {fileID: 21300000, guid: 6384cf0fc79d92a46bd82ad9a4b17402, type: 3}
+  - notifySound: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
